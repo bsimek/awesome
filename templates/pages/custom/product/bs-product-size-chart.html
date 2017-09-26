@@ -17,8 +17,9 @@ limit: {{theme_settings.productpage_similar_by_views_count}}
 {{/each}}
 
 <div itemscope itemtype="http://schema.org/Product">
-    {{> components/products/product-view-size-chart schema=true}}
-
+    <!--start pulls in custom component with size chart for t-shirt pages -->
+    {{> components/products/bs-product-view-size-chart schema=true}}
+    <!--end pulls in custom component with size chart for t-shirt pages -->
     {{#if product.videos.list.length}}
     {{> components/products/videos product.videos}}
     {{/if}}
