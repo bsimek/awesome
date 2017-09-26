@@ -1,0 +1,37 @@
+// =============================================================================
+// BUTTONS (CSS)
+// =============================================================================
+
+$button-shape: stencilString("button-shape");
+
+.button {
+    line-height: 1rem;
+    transition: all 0.15s ease;
+
+    @if ($button-shape == "rounded") {
+        border-radius: 25px;
+    }
+
+    @if ($button-shape == "leaf") {
+        border-radius: 15px 50px;
+    }
+
+    + .button {
+        margin-left: 0;
+
+        @include breakpoint("medium") {
+            margin-left: spacing("half");
+        }
+    }
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+}
+
+.button--icon {
+
+    svg {
+        fill: stencilColor("button--icon-svg-color");
+    }
+}

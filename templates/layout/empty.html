@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ head.title }}</title>
+    {{{ head.meta_tags }}}
+    {{{ head.config }}}
+    {{{stylesheet '/assets/css/theme.css'}}}
+    {{ getFontsCollection }}
+    <link href="{{ head.favicon }}" rel="shortcut icon">
+    <style type="text/css" media="screen, print">
+            @font-face {
+                font-family: "FancyFont";
+                src: url("{{cdn 'fonts/FancyFont.ttf'}}");
+                }
+    </style>
+    {{{head.scripts}}}
+    {{{head.rsslinks}}}
+
+    {{inject 'themeSettings' theme_settings}}
+    {{#block "head"}}{{/block}}
+</head>
+<body>
+    {{> components/common/header }}
+    {{#block "page"}}{{/block}}
+    {{> components/common/footer }}
+    <script src="{{cdn '/assets/js/bundle.js'}}"></script>
+    <script>
+            // Exported in app.js
+            window.stencilBootstrap("{{template_file}}", {{jsContext}}).load();
+        </script>
+
+    {{{footer.scripts}}}
+    {{{snippet 'footer'}}}
+</body>
+</html>
