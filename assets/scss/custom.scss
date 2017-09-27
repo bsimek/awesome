@@ -3,3 +3,27 @@
 .heroCarousel-content {
     background-color: #ff00ff;
 }
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#bannertop {
+    margin-bottom: 5rem;
+}
+
+#bannertop .widget-banner {
+    position: relative;
+    margin-top: 2.14286rem;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+}

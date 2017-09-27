@@ -11,7 +11,17 @@
         "powered_by": "Powered by"
     },
     "home": {
-        "heading": "Home"
+        "heading": "Home",
+        "bannertop_image1": "https://cdn6.bigcommerce.com/s-15oh2bq7wo/product_images/uploaded_images/alot.png",
+        "bannertop_link1": "https://www.buysomejunk.com/t-shirts/",
+        "bannertop_image2": "https://cdn6.bigcommerce.com/s-15oh2bq7wo/product_images/uploaded_images/allthethings.jpg",
+        "bannertop_link2": "https://www.buysomejunk.com/t-shirts/",
+        "bannertop_image3": "https://cdn6.bigcommerce.com/s-15oh2bq7wo/product_images/uploaded_images/dontsuck.jpg",
+        "bannertop_link3": "https://www.buysomejunk.com/t-shirts/",
+        "bannertop_image4": "https://cdn6.bigcommerce.com/s-15oh2bq7wo/product_images/uploaded_images/brak.jpg",
+        "bannertop_link4": "https://www.buysomejunk.com/t-shirts/",
+        "bannertop_image5": "https://cdn6.bigcommerce.com/s-15oh2bq7wo/product_images/uploaded_images/quokka.jpg",
+        "bannertop_link5": "https://www.buysomejunk.com/t-shirts/"
     },
     "blog": {
         "recent_posts": "Recent Posts",
